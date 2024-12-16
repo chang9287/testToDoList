@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'CookieRun-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-family: 'CookieRun-Regular';
+}
+
+/* 폰트 */
+/* common */
+*{
+  margin: 0 ; padding: 0; box-sizing: border-box;
+}
+body{
+  background-color: lightgoldenrodyellow;
+}
+ol, ul, li{
+  list-style: none;
+}
+/* App.js */
+.wrap{
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+}
+.wrap h2{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.wrap .inputContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap .inputContainer input{
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid darkgray;
+}
+.wrap .inputContainer input:focus{
+  border: 1px solid white;
+  outline: 2px solid cornflowerblue;
+}
+.wrap .inputContainer input::placeholder{
+  color: darkgray;
+  padding: 2px;
+  font-weight: 600;
+}
+.wrap .inputContainer button{
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: cornflowerblue;
+  color: #fff;
+  cursor: pointer;
+}
+/* TodoItem.js */
+/* TodoList.js */
+.TodoList{}
+.TodoItem{
+  margin: 0 auto;
+  width: 250px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.301);
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.TodoItem span{
+  font-size: 20px;
+  color: rgb(38, 38, 38);
+}
+.TodoItem.completed span{
+  text-decoration: line-through;
+  color: gray;
+}
+.TodoItem .fas{
+  padding: 5px 10px;
+  color: orange;
+}
